@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ /* background-color: brown; */
+  background-image: linear-gradient(green, white );
+}
+
+/* Navbar */
+.navbar {
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8b400 !important;
+}
+
+
+/* about section */
+.custom-hr {
+  width: 100px;
+  height: 5px;
+  background-color: #fffefe;
+  border-color: none;
+  border: none;
+  border-radius: 5%;
+  margin: 10px auto; /* Centers it */
+  transition: all 0.3s ease-in-out;
+}
+
+h2.text-center:hover + .custom-hr {
+  width: 150px; 
+   /* Expands width */
+  /* height:10px;   */
+   /* Increases thickness */
+  background-color: #ee0808; 
+  /* Changes color */
+}
+
+
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('./images/adr-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+/* Service Cards */
+.service-card {
+  height: 100%;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  background: #f8b400;
+  color: white;
+  transform: translateY(-5px);
+}
+
+
+/* .others-card {
+  height: 100%;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+} */
+
+.others-card:hover {
+  /* background: #f8b400; */
+  color: white;
+  transform: translateY(-5px);
+}
+
+.others{
+  height: 70%;
+  background: #0d63b9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Footer */
+.footer {
+  background: #afadad;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons a {
+  /* color: white; */
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #f8b400;
+}
