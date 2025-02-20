@@ -1,8 +1,9 @@
 /* General Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
- /* background-color: brown; */
-  background-image: linear-gradient(green, white );
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family:'Times New Roman', Times, serif;
+ background-color: rgb(101, 178, 101);
+  /* background-image: linear-gradient(green, white ); */
 }
 
 /* Navbar */
@@ -14,6 +15,12 @@ body {
   font-weight: bold;
 }
 
+.info-text{
+  font-size: large;
+  /* font-weight: 200; */
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .navbar-nav .nav-link {
   font-size: 1.1rem;
   margin-right: 15px;
@@ -27,13 +34,12 @@ body {
 
 /* about section */
 .custom-hr {
-  width: 100px;
+  width: 50px;
   height: 5px;
-  background-color: #fffefe;
-  border-color: none;
-  border: none;
-  border-radius: 5%;
-  margin: 10px auto; /* Centers it */
+  background-color: #fff;
+  
+  border-radius: 10%;
+  margin: 10px auto; 
   transition: all 0.3s ease-in-out;
 }
 
@@ -41,9 +47,9 @@ h2.text-center:hover + .custom-hr {
   width: 150px; 
    /* Expands width */
   /* height:10px;   */
-   /* Increases thickness */
-  background-color: #ee0808; 
-  /* Changes color */
+   
+  background-color: #ffff; 
+  
 }
 
 
@@ -117,8 +123,7 @@ h2.text-center:hover + .custom-hr {
 
 /* Footer */
 .footer {
-  background: #afadad;
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
   padding: 20px;
 }
@@ -131,4 +136,14 @@ h2.text-center:hover + .custom-hr {
 
 .social-icons a:hover {
   color: #f8b400;
+}
+
+h5 a.email-link {
+  text-decoration: none;
+  color: blue;
+}
+
+h5 a.email-link:hover {
+  text-decoration: underline;
+  color: whitesmoke;
 }
