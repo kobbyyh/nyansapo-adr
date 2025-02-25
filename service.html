@@ -11,12 +11,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/nyansapo.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/nyansapo.jpg">
+    
 
 </head>
 
-<body>
+<body style="background-color: white;">
 
     <!-- Navigation -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/nyansapo.jpg" alt="Logo" width="50" height="50">
+                NYANSAPO ADR Center
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" style="
+                             border-radius: 30px;
+                             margin-right: 20px;">
+                        Book Now
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -28,8 +55,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link " href="./service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./service.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
@@ -42,103 +69,114 @@
             </div>
         </div>
     </nav>
-
-    <div class="modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="bookingModalLabel">Book a Service</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-                    <form id="bookingForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="service" class="form-label">Service:</label>
-                            <select class="form-select" id="service" name="service" required>
-                                <option value="">Select the category of Service</option>
-                                <option value="adr_service">ADR Service</option>
-                                <option value="commissioner_of_oaths">Commissioner of Oaths & Paralegal Services
-                                </option>
-                                <option value="draft_documentation">Draft Documentation</option>
-
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="date" class="form-label">Date:</label>
-                            <input type="date" class="form-control" id="date" name="date" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="time" class="form-label">Time:</label>
-                            <input type="time" class="form-control" id="time" name="time" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Hero Section -->
-    <section class="hero text-center">
-        <h1><span style="font-family:'Times New Roman', Times, serif;">Nyansapo</span> <br>Alternative Dispute
-            Resolution
-            <br><span style="font-family:'Times New Roman', Times, serif;">Center</span>
-        </h1>
-        <p class="small-text"><i>Providing Mediation and Arbitration Services for a Peaceful Resolution</i></p>
-        <a href="#contact" class="btn btn-dark mt-3">Get In Touch</a>
-    </section>
-
+    
+   
 
     <!-- About Section -->
     <section id="about" class="container mt-5">
-        <h2 class="text-center"><b>About Us</b></h2>
         <hr class="custom-hr mb-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <p class="info-text">
-                    <b> NYANSAPO ADR Center</b> is a private third party impartial entity who adopts
-                    Alternative Dispute
-                    Resolution methods enshrined in <strong> (ADR ACT 797, 2010)</strong> to members of the public to
-                    obtain a mutually
-                    acceptable resolution to all disputes, voluntarily submitted to its centre.
-                    The centre and its practitioner are both certified member of <strong> Ghana National Association of
-                        ADR
-                        practitioners (GNAAP)</strong>, a recognised registered professional association in Ghana by
-                    Law.
-                    To point up, <b><i> NYANSAPOR ADR centre (TEMA)</i></b> in line principles of ADR guarantee its
-                    clients a voluntary
-                    non coerced procedure to aid all disputants, resolve cases and differences.
-                </p>
-                <p class="info-text"><strong><b>Our Areas of Focus:</b></strong></p>
-                <ul class="info-text">
-                    <li>Labour & Commercial Disputes</li>
-                    <li>Marital & Domestic Disputes (Child Maintenance & Custody)</li>
-                    <li>Land & Boundary Disputes</li>
-                    <li>Administrative & Corporate Disputes</li>
-                    <li>Property Settlement Disputes</li>
-                    <li>Landlord & Tenant Disputes</li>
+            <div class="col-md-6 text-left">
+                <p style="text-align: center;"> <strong>NYANSAPO ADR CENTER</strong> </p>
+                <p> We offer Mediation / Arbitration / Negotiation / Conciliation / Advocasy /
+                    Counselling & Lobbying services.
+
+                    <br>Admistrative / Filling & Consultation are valued between: <strong>GHC2000gh - GHC4000</strong>
+                    regarding the respective
+                    service.
+                    In respect to all below disputes
+
+                <ul>
+                    <li>Loan & Debt Recovery Disputes</li>
+                    <li>Intestate & Estate Distribution Disputes</li>
+                    <li>LandLord & Tenants Mediation</li>
+                    <li>Family & Couples Disputes</li>
+                    <li>Child Custody & Beneficiary Right.</li>
+                    <li>Land Acquisition & Ownership Mag't Disputes</li>
+                    <li>Admistrative & Coorperate Disputes</li>
                 </ul>
 
+
+                <strong>N/B 1: </strong>
+
+                <p>For All Case Management fees, 50% non- refundable of total cost for pre - Mediation & Mediation shall
+                    be charged & 50% payment
+                    charge,
+                    upon arrival of Terms of settlement by both parties and documented.
+                </p>
+
+                <strong>N/B 2:</strong>
+                <p> All Fees related & expenditure except filing fees are joint responsibility of the disputing
+                    parties unless otherwise agreed by the parties.</p>
+
+                <strong>N/B 3:</strong>
+                <p> Fees charged for Mediation, Arbitration and other ADR mechanisms cost for our services shall
+                    be
+                    secured on a value base accessment and mutually agreed as a CONCENT to mediate is signed or a fee
+                    agreeable between the center/ Practitioner and the parties. </p>
+
+                <strong>N/B 4:</strong>
+                <p>
+                    Cases of known value fees 10% fees shall be the charge exclusive Admistrative/ Filling &
+                    Consultation.</p>
+                </p>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="./images/gnaap1.png" alt="About Us Image" class="img-fluid rounded">
+            <div class="col-md-6">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookingModalLabel">Book a Service</h5>
+                        </div>
+                        <div class="modal-body">
+
+                            <form id="bookingForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="service" class="form-label">Service:</label>
+                                    <select class="form-select" id="service" name="service" required>
+                                        <option value="">Select the category of Service</option>
+                                        <option value="adr_service">ADR Service</option>
+                                        <option value="commissioner_of_oaths">Commissioner of Oaths & Paralegal Services
+                                        </option>
+                                        <option value="draft_documentation">Draft Documentation</option>
+
+                                    </select>
+                                </div>
+                                <!-- <div class="mb-3">
+                                    <label for="date" class="form-label">Date:</label>
+                                    <input type="date" class="form-control" id="date" name="date" required>
+                                </div>-->
+                                <div class="mb-3">
+                                    <label for="desc" class="form-label">A brief description of your required service:</label>
+                                    <textarea class="form-control" id="desc" name="desc" rows="4"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form>
+                            <br>
+                            <p style="font-weight: 500;">ADINIMUS COMMISSIONER FOR OATHS & PARALEGAL SERVICES TEMA
+
+                            <p> All payments for ADR OR COMMISSIONER FOR OATHS MUST BE THROUGH
+                                <b><i>0502900900</i></b> </p>
+                            Da4flex Consult Solutions Limited </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
 
     <!-- Services Section -->
-    <section id="services" class="container mt-5">
+    <!-- <section id="services" class="container mt-5">
         <h2 class="text-center"><b>Our Services</b></h2>
         <hr class="custom-hr">
 
@@ -146,7 +184,7 @@
             <div class="col-md-4 mt-3">
                 <div class="service-card">
                     <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                    
+
                     <h3>ADR Services</h3>
                     <p>We offer neutral mediation to help disputing parties reach a fair agreement.</p>
                 </div>
@@ -166,19 +204,18 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="section-3"
-        style="padding-bottom: 20px; background-image: linear-gradient(whitesmoke, rgb(38, 37, 37));">
-        <h2 class="text-center mt-5 py-5"><b>ADR Services</b></h2>
+    <!-- <section class="section-3"style="padding-bottom: 20px; background-image: linear-gradient(whitesmoke, rgb(38, 37, 37));">
+        <h2 class="text-center mt-5 py-5"><b>ADR Services</b></h2> -->
         <!-- <hr class="custom-hr"> -->
-        <div class="container mt-5">
+        <!-- <div class="container mt-5">
 
             <div class="row text-center">
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>PROPERTY SETTLEMENT DISPUTES
                         </h3>
                     </div>
@@ -186,35 +223,35 @@
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>MEDIATION</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>NEGOTIATION</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>ARBITRATION</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>ADVOCACY</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>LOBBYING</h3>
                     </div>
                 </div>
@@ -224,7 +261,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>LABOUR & COMMERCIAL DISPUTES
                         </h3>
                     </div>
@@ -232,159 +269,159 @@
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>MARITAL DISPUTES</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>DOMESTIC DISPUTES (CHILD MAINTENANCE & CUSTODY)</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>LAND & BOUNDARY DISPUTES</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>ADMINISTRATIVE & CORPORATE DISPUTES</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3">
                     <div class="service-card ">
                         <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
-                        
+
                         <h3>LANDLORD & TENANT DISPUTES</h3>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!-- </section> -->
 
 
         <!-- <div class="section-3 py-5"> -->
-        <div class="container text-center py-5">
+        <!-- <div class="container text-center py-5">
             <h2 class="fw-bold mb-4 py-5">Commissioner for Oaths & Paralegal Services </h2>
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div.svg" alt="Choose Date">
                         <h5 class="fw-bold mt-3">Affidavits</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-1.svg" alt="Select Service">
                         <h5 class="fw-bold mt-3">Swearing</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
                         <h5 class="fw-bold mt-3">Guarantors</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Attestation</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
                         <h5 class="fw-bold mt-3">Gazette</h5>
-                        
+
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <!-- </div> -->
 
-        <div class="container text-center py-5">
+        <!-- <div class="container text-center py-5">
             <h2 class="fw-bold mb-4 py-5">Drafts Documentation </h2>
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div.svg" alt="Choose Date">
                         <h5 class="fw-bold mt-3">Memorandum of Understanding</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-1.svg" alt="Select Service">
                         <h5 class="fw-bold mt-3">Authentication & Endorsement</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
                         <h5 class="fw-bold mt-3">Property Ownership Transfer</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Dissolution of Marriage</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
                         <h5 class="fw-bold mt-3">Last Will & Testament</h5>
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Receipt & Transfer</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Agreements</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Guardianship</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Sponsorship</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="step-card">
                         <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
                         <h5 class="fw-bold mt-3">Adoption</h5>
-            
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -394,13 +431,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-    </section>
+    <!-- </section> -->
 
 
-    <section>
+    <!-- <section>
         <h5 class="container mt-5" style="text-align: center; "><b><i>
                     "Mediation as the first option of call in all disputes is of much
                     significance than
@@ -420,7 +457,7 @@
                 </a>
             </h5>
         </section>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer bg-dark">
@@ -471,8 +508,6 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function () {
@@ -485,8 +520,9 @@
         })();
 
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
- 
 
 </body>
 

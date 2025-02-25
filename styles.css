@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family:'Times New Roman', Times, serif;
  background-color: rgb(101, 178, 101);
   /* background-image: linear-gradient(green, white ); */
@@ -172,4 +171,20 @@ h5 a.email-link {
 h5 a.email-link:hover {
   text-decoration: underline;
   color: whitesmoke;
+}
+
+
+/* -------------services section----------- */
+.service-main-container{
+  padding-top: 10rem;
+  /* height: 100vh; */
+  /* display: flex; */
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: white;
+  /* text-align: left; */
+  padding-right: 7rem ;
+  padding-left: 7rem;
+  
 }
