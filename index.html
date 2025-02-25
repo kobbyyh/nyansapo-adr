@@ -29,14 +29,67 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                    <!-- <a class="btn btn-primary" href="services.html" style="
+                    border-radius: 30px;
+                    margin-right: 20px;">
+                        Book Now
+                    </a> -->
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" style="
+                             border-radius: 30px;
+                             margin-right: 20px;">
+                        Book Now
+                    </button>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book a Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service:</label>
+                            <select class="form-select" id="service" name="service" required>
+                                <option value="">Select the category of Service</option>
+                                <option value="adr_service">ADR Service</option>
+                                <option value="commissioner_of_oaths">Commissioner of Oaths & Paralegal Services
+                                </option>
+                                <option value="draft_documentation">Draft Documentation</option>
+
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date:</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Time:</label>
+                            <input type="time" class="form-control" id="time" name="time" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Hero Section -->
@@ -95,84 +148,263 @@
         <hr class="custom-hr">
 
         <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="service-card">
                     <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
                     <!-- fas fa-scale-balanced fa-3x mb-3  -->
-                    <h3>Mediation</h3>
+                    <h3>ADR Services</h3>
                     <p>We offer neutral mediation to help disputing parties reach a fair agreement.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="service-card">
                     <i class="fas fa-gavel fa-3x mb-3 text-warning"></i>
-                    <h3>Arbitration</h3>
+                    <h3>Commissioner for Oaths & Paralegal Services</h3>
                     <p>Our certified arbitrators provide legally binding resolutions outside the courtroom.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="service-card">
                     <i class="fas fa-handshake fa-3x mb-3 text-success"></i>
-                    <h3>Negotiation</h3>
+                    <h3>Draft Documentation</h3>
                     <p>We facilitate structured negotiations to ensure peaceful settlements.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2 class="text-center mt-5"><b>Others</b></h2>
-        <hr class="custom-hr">
+    <section class="section-3"
+        style="padding-bottom: 20px; background-image: linear-gradient(whitesmoke, rgb(38, 37, 37));">
+        <h2 class="text-center mt-5 py-5"><b>ADR Services</b></h2>
+        <!-- <hr class="custom-hr"> -->
         <div class="container mt-5">
-            <div class="col text-center">
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i> -->
+
+            <div class="row text-center">
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
                         <!-- fas fa-scale-balanced fa-3x mb-3  -->
-                        <h3>LABOUR & COMMERCIAL DISPUTES</h3>
+                        <h3>PROPERTY SETTLEMENT DISPUTES
+                        </h3>
                     </div>
                 </div>
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-gavel fa-3x mb-3 text-warning"></i> -->
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>MEDIATION</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>NEGOTIATION</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>ARBITRATION</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>ADVOCACY</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>LOBBYING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>LABOUR & COMMERCIAL DISPUTES
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
                         <h3>MARITAL DISPUTES</h3>
                     </div>
                 </div>
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-handshake fa-3x mb-3 text-success"></i> -->
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
                         <h3>DOMESTIC DISPUTES (CHILD MAINTENANCE & CUSTODY)</h3>
                     </div>
                 </div>
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-handshake fa-3x mb-3 text-success"></i> -->
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
                         <h3>LAND & BOUNDARY DISPUTES</h3>
                     </div>
                 </div>
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-handshake fa-3x mb-3 text-success"></i> -->
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
                         <h3>ADMINISTRATIVE & CORPORATE DISPUTES</h3>
                     </div>
                 </div>
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-handshake fa-3x mb-3 text-success"></i> -->
-                        <h3> PROPERTY SETTLEMENT DISPUTES</h3>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="service-card ">
+                        <i class="fas fa-scale-balanced fa-3x mb-3 text-primary"></i>
+                        <!-- fas fa-scale-balanced fa-3x mb-3  -->
+                        <h3>LANDLORD & TENANT DISPUTES</h3>
                     </div>
                 </div>
-                <div class="others col-md-12">
-                    <div class="others-card">
-                        <!-- <i class="fas fa-handshake fa-3x mb-3 text-success"></i> -->
-                        <h3>LANDLORD & TENANT DISPUTES</h3>
+            </div>
+
+        </div>
+        <!-- </section> -->
+
+
+        <!-- <div class="section-3 py-5"> -->
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-4 py-5">Commissioner for Oaths & Paralegal Services </h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div.svg" alt="Choose Date">
+                        <h5 class="fw-bold mt-3">Affidavits</h5>
+                        <!-- <p>Select your preferred appointment slot</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-1.svg" alt="Select Service">
+                        <h5 class="fw-bold mt-3">Swearing</h5>
+                        <!-- <p>Pick your desired piercing type</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
+                        <h5 class="fw-bold mt-3">Guarantors</h5>
+                        <!-- <p>Provide your information</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Attestation</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
+                        <h5 class="fw-bold mt-3">Gazette</h5>
+                        <!-- <p>Provide your information</p> -->
                     </div>
                 </div>
 
             </div>
         </div>
+        <!-- </div> -->
+
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-4 py-5">Drafts Documentation </h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div.svg" alt="Choose Date">
+                        <h5 class="fw-bold mt-3">Memorandum of Understanding</h5>
+                        <!-- <p>Select your preferred appointment slot</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-1.svg" alt="Select Service">
+                        <h5 class="fw-bold mt-3">Authentication & Endorsement</h5>
+                        <!-- <p>Pick your desired piercing type</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
+                        <h5 class="fw-bold mt-3">Property Ownership Transfer</h5>
+                        <!-- <p>Provide your information</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Dissolution of Marriage</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-2.svg" alt="Fill Details">
+                        <h5 class="fw-bold mt-3">Last Will & Testament</h5>
+                        <!-- <p>Provide your information</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Receipt & Transfer</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Agreements</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Guardianship</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Sponsorship</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Adoption</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <img class="icon" src="https://c.animaapp.com/h0kenDed/img/div-3.svg" alt="Confirmation">
+                        <h5 class="fw-bold mt-3">Indenture</h5>
+                        <!-- <p>Receive booking confirmation</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </section>
+
 
     <section>
         <h5 class="container mt-5" style="text-align: center; "><b><i>
@@ -189,7 +421,7 @@
             <h2 class="text-center mt-5"><b>Contact Us</b></h2>
             <hr class="custom-hr">
 
-            <h5><i class="fas fa-phone"></i> Mobile: 0555553880 | Landline: 0332095274</h5>
+            <h5><i class="fas bi-phone"></i> Mobile: 0555553880 | Landline: 0332095274</h5>
             <h5><i class="fas fa-envelope"></i> Email:
                 <a class="email-link" href="mailto:nyansapoadrcentre@gmail.com">nyansapoadrcentre@gmail.com
                 </a>
@@ -202,16 +434,45 @@
 
         <div class="row text-center mt-5">
             <div class="col-md-4">
+                <img src="./images/nyansapo2.jpg" style="width: 20%; margin-bottom: 20px;" alt="">
+                <img src="./images/gnaap1.png" style="width: 20%; margin-bottom: 20px;" alt="">
+                <img src="./images/da4flex1.png" style="width: 20%; margin-bottom: 20px;" alt="">
 
-                <img src="./images/nyansapo2.jpg" style="width: 50%;" alt="">
+                <p style="text-align: left; "><b> NYANSAPO ADR Center</b> is a private third party impartial entity who
+                    adopts
+                    Alternative Dispute
+                    Resolution methods enshrined in <strong> (ADR ACT 797, 2010)</strong> to members of the public to
+                    obtain a mutually
+                    acceptable resolution to all disputes, voluntarily submitted to its centre.</p>
             </div>
-            <div class="col-md-4">
-                <img src="./images/gnaap1.png" style="width: 50%;" alt="">
-                </section>
+
+            <div class="col-lg-4 col-md-4 mb-4">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#services" class="text-secondary text-decoration-none">Services</a></li>
+                    <li><a href="#gallery" class="text-secondary text-decoration-none">About us</a></li>
+                    <li><a href="#artists" class="text-secondary text-decoration-none">Contact</a></li>
+                    <li><a href="#book" class="text-secondary text-decoration-none">Book Now</a></li>
+                </ul>
             </div>
-            <div class="col-md-4">
-                <img src="./images/da4flex1.png" style="width: 50%;" alt="">
+
+
+            <div class="col-lg-4 col-md-4 mb-4">
+                <h3>Social Links</h3>
+                <ul class="list-unstyled">
+                    <div class="justify-content gap-3 social-links">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                    </div>
+                </ul>
+                <h5><i class="bi bi-phone"></i> Mobile: 0555553880 <br> Landline: 0332095274</h5>
+                <h5><i class="fas fa-envelope"></i> Email:
+                    <a class="email-link" href="mailto:nyansapoadrcentre@gmail.com">nyansapoadrcentre@gmail.com
+                    </a>
+                </h5>
             </div>
+
         </div>
         <p class="mt-5"><b>&copy; 2025 NYANSAPO ADR Center. All Rights Reserved.</b></p>
 
@@ -232,6 +493,62 @@
         })();
 
     </script>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById("bookingModal");
+        const btn = document.querySelector(".button-2");
+        const closeBtn = document.querySelector(".close");
+        const bookingForm = document.getElementById("bookingForm");
+        const bookButtons = document.querySelectorAll(".book-button");
+        const emailInput = document.getElementById("emailInput");
+        const subscribeForm = document.getElementById("subscribeForm");
+
+        // Open modal when the booking button is clicked
+        btn?.addEventListener("click", () => {
+            modal.style.display = "block";
+        });
+
+        // Open modal when any booking button is clicked
+        bookButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                modal.style.display = "block";
+            });
+        });
+
+        // Close modal when close button is clicked
+        closeBtn?.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+        // Handle booking form submission
+        bookingForm?.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                service: document.getElementById("service").value,
+                date: document.getElementById("date").value,
+                time: document.getElementById("time").value,
+            };
+
+            console.log("Booking submitted:", formData);
+            alert("Booking submitted successfully!");
+
+            modal.style.display = "none";
+            bookingForm.reset();
+        });
+
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
 
 </body>
 

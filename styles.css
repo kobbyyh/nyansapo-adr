@@ -28,7 +28,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #f8b400 !important;
+  color: #1ab9c2 !important;
 }
 
 
@@ -51,8 +51,6 @@ h2.text-center:hover + .custom-hr {
   background-color: #ffff; 
   
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -83,14 +81,16 @@ h2.text-center:hover + .custom-hr {
 /* Service Cards */
 .service-card {
   height: 100%;
+  text-align: center;
   background: #f8f9fa;
   border-radius: 10px;
   padding: 20px;
   transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
 }
 
 .service-card:hover {
-  background: #f8b400;
+  background: #1ab9c2;
   color: white;
   transform: translateY(-5px);
 }
@@ -108,18 +108,44 @@ h2.text-center:hover + .custom-hr {
   /* background: #f8b400; */
   color: white;
   transform: translateY(-5px);
+  transition: all 0.5s ease-in-out;
+
 }
 
 .others{
   height: 70%;
-  background: #0d63b9;
+  background: #1ab9c2;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
+/* --------------- */
+.section-3{
+  /* background-color: #f9fafb; */
+  background-image: linear-gradient(whitesmoke, rgb(38, 37, 37));
+}
 
+.step-card {
+  height: 100%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  background-color: #1ab9c2;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
 
 /* Footer */
 .footer {
@@ -130,7 +156,7 @@ h2.text-center:hover + .custom-hr {
 
 .social-icons a {
   /* color: white; */
-  margin: 0 10px;
+  /* margin: 0 10px; */
   transition: color 0.3s ease-in-out;
 }
 
