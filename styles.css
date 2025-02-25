@@ -165,7 +165,7 @@ h2.text-center:hover + .custom-hr {
 
 h5 a.email-link {
   text-decoration: none;
-  color: blue;
+  color: white;
 }
 
 h5 a.email-link:hover {
@@ -187,4 +187,15 @@ h5 a.email-link:hover {
   padding-right: 7rem ;
   padding-left: 7rem;
   
+}
+
+.footer-links a{
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  /* padding: 20px; */
+}
+.footer-links a:hover{
+  text-decoration: underline;
 }
