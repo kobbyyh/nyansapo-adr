@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/nyansapo.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/nyansapo.jpg">
-    
+
 
 </head>
 
@@ -57,20 +57,12 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="./service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-                    <!-- <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" style="
-                             border-radius: 30px;
-                             margin-right: 20px;">
-                        Book Now
-                    </button> -->
                 </ul>
             </div>
         </div>
     </nav>
-    
-   
 
     <!-- About Section -->
     <section id="about" class="container mt-5">
@@ -95,16 +87,12 @@
                     <li>Land Acquisition & Ownership Mag't Disputes</li>
                     <li>Admistrative & Coorperate Disputes</li>
                 </ul>
-
-
                 <strong>N/B 1: </strong>
-
                 <p>For All Case Management fees, 50% non- refundable of total cost for pre - Mediation & Mediation shall
                     be charged & 50% payment
                     charge,
                     upon arrival of Terms of settlement by both parties and documented.
                 </p>
-
                 <strong>N/B 2:</strong>
                 <p> All Fees related & expenditure except filing fees are joint responsibility of the disputing
                     parties unless otherwise agreed by the parties.</p>
@@ -126,10 +114,11 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Book a Service</h5>
+                            
                         </div>
                         <div class="modal-body">
 
-                            <form id="bookingForm">
+                            <!-- <form id="bookingForm">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Name:</label>
                                     <input type="text" class="form-control" id="name" name="name" required>
@@ -149,23 +138,52 @@
 
                                     </select>
                                 </div>
-                                <!-- <div class="mb-3">
-                                    <label for="date" class="form-label">Date:</label>
-                                    <input type="date" class="form-control" id="date" name="date" required>
-                                </div>-->
+                                
                                 <div class="mb-3">
-                                    <label for="desc" class="form-label">A brief description of your required service:</label>
+                                    <label for="desc" class="form-label">A brief description of your required
+                                        service:</label>
                                     <textarea class="form-control" id="desc" name="desc" rows="4"></textarea>
                                 </div>
-                                
+
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form> -->
+                            
+                            <form action="https://formsubmit.co/nyansapoadrcentre@gmail.com" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="Name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="Email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="service" class="form-label">Service:</label>
+                                    <select class="form-select" id="Service" name="service" required>
+                                        <option value="">Select the category of Service</option>
+                                        <option value="adr_service">ADR Service</option>
+                                        <option value="commissioner_of_oaths">Commissioner of Oaths & Paralegal Services</option>
+                                        <option value="draft_documentation">Draft Documentation</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="desc" class="form-label">A brief description of your required service:</label>
+                                    <textarea class="form-control" id="Desc" name="desc" rows="4"></textarea>
+                                </div>
+                                <input type="hidden" name="_next" value="finalform.html">
                                 <button type="submit" class="btn btn-primary w-100">Submit</button>
                             </form>
+                            
+
+                            
                             <br>
                             <p style="font-weight: 700;">ADINIMUS COMMISSIONER FOR OATHS & PARALEGAL SERVICES TEMA
 
                             <p> All payments for ADR OR COMMISSIONER FOR OATHS MUST BE THROUGH
-                                <b><i>0502900900</i></b> 
-                            For more enquiries, kindly reach out to our email or telephone numbers provided below </p>
+                                <b><i>0502900900</i></b>
+                                For more enquiries, kindly reach out to our email or telephone numbers provided below
+                            </p>
                             Da4flex Consult Solutions Limited </p>
                         </div>
                     </div>
@@ -175,8 +193,28 @@
         </div>
     </section>
 
+    <section class="contact" id="contact">
+        <h5 class="container mt-5" style="text-align: center; "><b><i>
+                    "Mediation as the first option of call in all disputes is of much
+                    significance than
+                    Litigation-Our Core Belief.
+                    We would be utmost pleased if your esteem outfit recommends our centre to persons or parties engaged
+                    in less
+                    misdeed cases, disagreements and disputes for amicable voluntary settlement."
+                </i></b></h5>
 
-  
+        <section id="contact" class="container mt-5 mb-5  text-center">
+            <h2 class="text-center mt-5"><b>Contact Us</b></h2>
+            <hr class="custom-hr">
+
+            Mobile:<a class="email-link text-decoration-none" href="tel:0555553880"> 0555553880</a> <br>
+            Landline:<a class="email-link text-decoration-none" href="tel:0332095274"> 0332095274</a>            <h5><i class="fas fa-envelope"></i> Email:
+                <a class="email-link text-primary" href="mailto:nyansapoadrcentre@gmail.com">nyansapoadrcentre@gmail.com
+                </a>
+            </h5>
+        </section>
+    </section>
+
     <!-- Footer -->
     <footer class="footer bg-dark">
 
@@ -186,7 +224,8 @@
                 <img src="./images/gnaap1.png" style="width: 20%; margin-bottom: 20px;" alt="">
                 <img src="./images/da4flex1.png" style="width: 20%; margin-bottom: 20px;" alt="">
 
-                <p class="container" style="text-align: left; "><b> NYANSAPO ADR Center</b> is a private third party impartial entity who
+                <p class="container" style="text-align: left; "><b> NYANSAPO ADR Center</b> is a private third party
+                    impartial entity who
                     adopts
                     Alternative Dispute
                     Resolution methods enshrined in <strong> (ADR ACT 797, 2010)</strong> to members of the public to
@@ -197,7 +236,7 @@
             <div class="col-lg-4 col-md-4 mb-4">
                 <h3 style="color: blue;">Quick Links</h3>
                 <ul class="footer-links list-unstyled">
-                    <li><a href="#index.html" class="";>Home</a></li>
+                    <li><a href="#index.html" class="" ;>Home</a></li>
                     <li><a href="#services" class="">Services</a></li>
                     <li><a href="#about-us" class="">About Us</a></li>
                     <li><a href="#contact" class="">Contact</a></li>
@@ -209,9 +248,12 @@
                 <h3 style="color: blue;">Social Links</h3>
                 <ul class="list-unstyled">
                     <div class="justify-content ">
-                        <a href="#" class="text-light" style="margin-right: 20px;"><i class="bi bi-facebook fs-4 "></i></a>
-                        <a href="#" class="text-light" style="margin-right: 20px;"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#" class="text-light" style="margin-right: 20px;"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light" style="margin-right: 20px;"><i
+                                class="bi bi-facebook fs-4 "></i></a>
+                        <a href="#" class="text-light" style="margin-right: 20px;"><i
+                                class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light" style="margin-right: 20px;"><i
+                                class="bi bi-twitter fs-4"></i></a>
                     </div>
                 </ul>
                 <h5>
@@ -219,7 +261,7 @@
                     <a class="email-link" href="tel:0555553880">Mobile: 0555553880</a> <br>
                     <a class="email-link" href="tel:0332095274">Landline: 0332095274</a>
                 </h5>
-                
+
                 <h5><i class="fas fa-envelope"></i> Email:
                     <a class="email-link" href="mailto:nyansapoadrcentre@gmail.com">nyansapoadrcentre@gmail.com
                     </a>
@@ -227,7 +269,7 @@
             </div>
 
         </div>
-        <p class="mt-5"><b>&copy; 2025 NYANSAPO ADR Center. All Rights Reserved.</b></p>
+        <p class="mt-5">&copy; 2025 Nyansapo ADR Center. All Rights Reserved.</p>
 
     </footer>
 
@@ -243,7 +285,7 @@
         })();
 
     </script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 

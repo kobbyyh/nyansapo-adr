@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-  font-family:'Times New Roman', Times, serif;
- background-color: rgb(101, 178, 101);
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(101, 178, 101);
   /* background-image: linear-gradient(green, white ); */
 }
 
@@ -14,12 +14,13 @@ body {
   font-weight: bold;
 }
 
-.info-text{
+.info-text {
   font-size: large;
   /* font-weight: 200; */
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .navbar-nav .nav-link {
   font-size: 1.1rem;
   margin-right: 15px;
@@ -36,19 +37,19 @@ body {
   width: 50px;
   height: 5px;
   background-color: #fff;
-  
+
   border-radius: 10%;
-  margin: 10px auto; 
+  margin: 10px auto;
   transition: all 0.3s ease-in-out;
 }
 
-h2.text-center:hover + .custom-hr {
-  width: 150px; 
-   /* Expands width */
+h2.text-center:hover+.custom-hr {
+  width: 150px;
+  /* Expands width */
   /* height:10px;   */
-   
-  background-color: #ffff; 
-  
+
+  background-color: #ffff;
+
 }
 
 /* Hero Section */
@@ -111,7 +112,7 @@ h2.text-center:hover + .custom-hr {
 
 }
 
-.others{
+.others {
   height: 70%;
   background: #1ab9c2;
   border-radius: 10px;
@@ -121,7 +122,7 @@ h2.text-center:hover + .custom-hr {
 }
 
 /* --------------- */
-.section-3{
+.section-3 {
   /* background-color: #f9fafb; */
   background-image: linear-gradient(whitesmoke, rgb(38, 37, 37));
 }
@@ -175,7 +176,7 @@ h5 a.email-link:hover {
 
 
 /* -------------services section----------- */
-.service-main-container{
+.service-main-container {
   padding-top: 10rem;
   /* height: 100vh; */
   /* display: flex; */
@@ -184,18 +185,25 @@ h5 a.email-link:hover {
   /* align-items: center; */
   color: white;
   /* text-align: left; */
-  padding-right: 7rem ;
+  padding-right: 7rem;
   padding-left: 7rem;
-  
+
 }
 
-.footer-links a{
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.footer-links a {
   font-weight: 400;
   color: white;
   text-align: center;
   text-decoration: none;
   /* padding: 20px; */
 }
-.footer-links a:hover{
+
+.footer-links a:hover {
   text-decoration: underline;
 }
